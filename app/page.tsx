@@ -4,19 +4,19 @@ import Footer from './components/Footer';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#5A0D0D]">
       <Navigation />
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <section className="pt-20 pb-32 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold text-black mb-6" style={{ fontFamily: 'var(--font-oswald)' }}>
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6" style={{ fontFamily: 'var(--font-oswald)' }}>
             Institute of Politics
           </h1>
-          <p className="text-2xl md:text-3xl text-gray-900 mb-4" style={{ fontFamily: 'var(--font-oswald)' }}>
+          <p className="text-2xl md:text-3xl text-white mb-4" style={{ fontFamily: 'var(--font-oswald)' }}>
             at Stanford
           </p>
-          <p className="text-xl text-gray-700 max-w-2xl mx-auto mt-8" style={{ fontFamily: 'var(--font-cormorant)' }}>
+          <p className="text-xl text-white/90 max-w-2xl mx-auto mt-8" style={{ fontFamily: 'var(--font-cormorant)' }}>
             We inspire students to be civically engaged and democratically focused by preparing undergraduates to become future leaders and explore pathways in government service.
           </p>
         </section>
@@ -26,7 +26,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <a 
               href="#mailing-list"
-              className="bg-white border-2 border-black p-8 hover:bg-[#8C1515] hover:text-white transition-all cursor-pointer"
+              className="bg-white border-2 border-white p-8 hover:bg-black hover:border-black transition-all cursor-pointer"
             >
               <div className="text-4xl mb-4">📧</div>
               <h3 className="text-xl font-bold text-black mb-2 hover:text-white" style={{ fontFamily: 'var(--font-oswald)' }}>
@@ -39,7 +39,7 @@ export default function Home() {
 
             <a 
               href="#exec-team"
-              className="bg-white border-2 border-black p-8 hover:bg-[#8C1515] hover:text-white transition-all cursor-pointer"
+              className="bg-white border-2 border-white p-8 hover:bg-black hover:border-black transition-all cursor-pointer"
             >
               <div className="text-4xl mb-4">👥</div>
               <h3 className="text-xl font-bold text-black mb-2 hover:text-white" style={{ fontFamily: 'var(--font-oswald)' }}>
@@ -54,7 +54,7 @@ export default function Home() {
               href="https://instagram.com/iopstanford"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white border-2 border-black p-8 hover:bg-[#8C1515] hover:text-white transition-all cursor-pointer"
+              className="bg-white border-2 border-white p-8 hover:bg-black hover:border-black transition-all cursor-pointer"
             >
               <div className="text-4xl mb-4">📷</div>
               <h3 className="text-xl font-bold text-black mb-2 hover:text-white" style={{ fontFamily: 'var(--font-oswald)' }}>
@@ -69,7 +69,7 @@ export default function Home() {
 
         {/* Mailing List Form */}
         <section id="mailing-list" className="pb-20">
-          <div className="max-w-2xl mx-auto bg-white border-2 border-black p-8">
+          <div className="max-w-2xl mx-auto bg-white border-2 border-white p-8">
             <h2 className="text-3xl font-bold text-black mb-4 text-center" style={{ fontFamily: 'var(--font-oswald)' }}>
               Join Our Mailing List
             </h2>
@@ -118,7 +118,7 @@ export default function Home() {
 
         {/* Exec Team Application */}
         <section id="exec-team" className="pb-20">
-          <div className="max-w-2xl mx-auto bg-white border-2 border-black p-8">
+          <div className="max-w-2xl mx-auto bg-white border-2 border-white p-8">
             <h2 className="text-3xl font-bold text-black mb-4 text-center" style={{ fontFamily: 'var(--font-oswald)' }}>
               Apply to Executive Team
             </h2>
@@ -142,25 +142,25 @@ export default function Home() {
         {/* Quick Links */}
         <section className="pb-20">
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-black mb-8" style={{ fontFamily: 'var(--font-oswald)' }}>Explore</h2>
+            <h2 className="text-3xl font-bold text-white mb-8" style={{ fontFamily: 'var(--font-oswald)' }}>Explore</h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link 
                 href="/political-review"
-                className="px-8 py-3 bg-[#8C1515] text-white hover:bg-[#6B0F0F] transition-colors font-bold border-2 border-black"
+                className="px-8 py-3 bg-white text-black hover:bg-black hover:text-white transition-colors font-bold border-2 border-white"
                 style={{ fontFamily: 'var(--font-oswald)' }}
               >
                 Political Review
               </Link>
               <Link 
                 href="/about"
-                className="px-8 py-3 bg-black text-white hover:bg-gray-800 transition-colors font-bold border-2 border-black"
+                className="px-8 py-3 bg-white text-black hover:bg-black hover:text-white transition-colors font-bold border-2 border-white"
                 style={{ fontFamily: 'var(--font-oswald)' }}
               >
                 About Us
               </Link>
               <Link 
                 href="/opportunities"
-                className="px-8 py-3 bg-black text-white hover:bg-gray-800 transition-colors font-bold border-2 border-black"
+                className="px-8 py-3 bg-white text-black hover:bg-black hover:text-white transition-colors font-bold border-2 border-white"
                 style={{ fontFamily: 'var(--font-oswald)' }}
               >
                 Events

@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 
 export default function Opportunities() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#5A0D0D]">
       <Navigation />
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
