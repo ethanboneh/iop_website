@@ -13,16 +13,16 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-xl font-bold text-gray-900">IOP</span>
-            <span className="text-sm text-gray-600 hidden sm:inline">Institute of Politics at Stanford</span>
+            <span className="text-xl font-bold text-black" style={{ fontFamily: 'var(--font-oswald)' }}>IOP</span>
+            <span className="text-sm text-gray-700 hidden sm:inline" style={{ fontFamily: 'var(--font-cormorant)' }}>Institute of Politics at Stanford</span>
           </Link>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-gray-900 font-medium">
+            <Link href="/" className="text-black hover:text-[#8C1515] font-bold" style={{ fontFamily: 'var(--font-oswald)' }}>
               Home
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-gray-900 font-medium">
+            <Link href="/about" className="text-black hover:text-[#8C1515] font-bold" style={{ fontFamily: 'var(--font-oswald)' }}>
               About
             </Link>
             <div 
@@ -30,33 +30,33 @@ export default function Navigation() {
               onMouseEnter={() => setIsBranchesOpen(true)}
               onMouseLeave={() => setIsBranchesOpen(false)}
             >
-              <button className="text-gray-700 hover:text-gray-900 font-medium flex items-center">
+              <button className="text-black hover:text-[#8C1515] font-bold flex items-center" style={{ fontFamily: 'var(--font-oswald)' }}>
                 Branches
                 <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
               {isBranchesOpen && (
-                <div className="absolute top-full left-0 mt-1 w-64 bg-white border border-gray-200 rounded-md shadow-lg py-2">
-                  <Link href="/political-review" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">
+                <div className="absolute top-full left-0 mt-1 w-64 bg-white border-2 border-black shadow-lg py-2">
+                  <Link href="/political-review" className="block px-4 py-2 text-black hover:bg-[#8C1515] hover:text-white font-bold" style={{ fontFamily: 'var(--font-oswald)' }}>
                     Political Review
                   </Link>
-                  <Link href="/branches/community-service" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">
+                  <Link href="/branches/community-service" className="block px-4 py-2 text-black hover:bg-[#8C1515] hover:text-white font-bold" style={{ fontFamily: 'var(--font-oswald)' }}>
                     Community-Engaged Direct Service
                   </Link>
-                  <Link href="/branches/mentorship" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">
+                  <Link href="/branches/mentorship" className="block px-4 py-2 text-black hover:bg-[#8C1515] hover:text-white font-bold" style={{ fontFamily: 'var(--font-oswald)' }}>
                     Public Service Mentorship
                   </Link>
-                  <Link href="/branches/programming" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">
+                  <Link href="/branches/programming" className="block px-4 py-2 text-black hover:bg-[#8C1515] hover:text-white font-bold" style={{ fontFamily: 'var(--font-oswald)' }}>
                     Programming & Events
                   </Link>
                 </div>
               )}
             </div>
-            <Link href="/fellows-mentors" className="text-gray-700 hover:text-gray-900 font-medium">
+            <Link href="/fellows-mentors" className="text-black hover:text-[#8C1515] font-bold" style={{ fontFamily: 'var(--font-oswald)' }}>
               Fellows & Mentors
             </Link>
-            <Link href="/opportunities" className="text-gray-700 hover:text-gray-900 font-medium">
+            <Link href="/opportunities" className="text-black hover:text-[#8C1515] font-bold" style={{ fontFamily: 'var(--font-oswald)' }}>
               Events
             </Link>
           </div>
